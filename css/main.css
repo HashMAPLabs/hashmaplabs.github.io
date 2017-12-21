@@ -2,17 +2,33 @@ body{
 	font-family: 'Lato', sans-serif;
 
 }
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.center-block {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
 .hero-unit{
 	display: table;
 	width: 100%;
-	min-height: 500px;
-	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdn.discordapp.com/attachments/346255492500160512/393102486434742272/people-woman-coffee-meeting.jpg");
+	min-height: 400px;
+	height: 60vh;
+	background: linear-gradient(rgba(0,0,0,0.71), rgba(0,0,0,0.71)), url("/assets/background.jpg") repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-	overflow: hidden;
+	background-repeat: repeat-x;
+	background-repeat: repeat-y;
+	background-repeat: repeat;
+	background-repeat: space;
+	background-repeat: round;
+	background-repeat: no-repeat;	overflow: hidden;
 }
 .text-vertical-center {
 	display: table-cell;
@@ -22,20 +38,46 @@ body{
 }
 .hero-unit-primary-text{
 	text-transform: capitalize;
-	font-size: 45px;
+	font-size: 65px;
 	font-weight: 700;
 	line-height: 1;
 	color: #FFF;
 }
 .hero-unit-secondary-text{
-	font-size: 26px;
+	font-size: 46px;
 	font-weight: 500;
 	line-height: 1;
+	margin-bottom: 35px;
+}
+@media(max-width: 749px){
+	.hero-unit-primary-text{
+		font-size: 35px;
+	}
+	.hero-unit-secondary-text{
+		font-size: 18px;
+	}
 }
 .navbar-transparent {
 	background-color: transparent;
 	position: absolute;
 	width: 100%;
+}
+.navbar-brand {
+	color: #FFF;
+}
+.nav-link{
+	color: #FFF !important;
+	font-weight: 200;
+	font-size: 18px;
+}
+.navbar-brand {
+	display: inline-block;
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	line-height: inherit;
+	white-space: nowrap;
 }
 .navbar-dark .navbar-nav .nav-link {
 	color: rgba(255, 255, 255, 0.7);
@@ -52,4 +94,30 @@ body{
 	background-color: transparent;
 	position: absolute;
 	width: 100%
+}
+.btn-primary-custom{
+	border: 2px solid #FFF;
+	background-color: transparent;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+}
+.btn-primary-custom:hover{
+	background-color: #fff;
+	color: 000;
+}
+.ribbon{
+	padding: 30px 0px;
+	background-color: #1371ED;
+
+}
+.ribbon-text{
+	font-size: 32px;
+	font-weight: 300;
+	color: #FFF;
+}
+.footer{
+	background-color: #f3f3f3;
+	text-align: center;
+	padding: 15px;
 }
