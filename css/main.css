@@ -191,7 +191,7 @@ h5{
 @media (max-width: 767px) {
   #peg-grid-title {
     top: 49px;
-    left: 49px;
+    left: 29px;
     width: 196px;
     height: 147px;
     padding-top: 13px;
@@ -200,11 +200,12 @@ h5{
   }
   #peg-grid-subtitle {
     top: 245px;
-    left: 49px;
+    left: 29px;
     width: 343px;
     height: 147px;
     line-height: 1.1em;
-    padding-left: 21px
+    padding-left: 21px;
+
   }
 }
 
@@ -220,6 +221,7 @@ h5{
     left: 98px;
     width: 588px;
     height: 98px;
-    line-height: 1.1em
+    line-height: 1.1em;
+
   }
 }
