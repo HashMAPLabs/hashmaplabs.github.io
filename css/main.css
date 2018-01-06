@@ -23,12 +23,6 @@ a:hover{
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-	background-repeat: repeat-x;
-	background-repeat: repeat-y;
-	background-repeat: repeat;
-	background-repeat: space;
-	background-repeat: round;
-	background-repeat: no-repeat;	overflow: hidden;
 }
 .text-vertical-center {
 	display: table-cell;
