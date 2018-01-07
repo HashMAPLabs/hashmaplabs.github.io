@@ -1,6 +1,6 @@
 // set up SVG for D3
 var width  = 500,
-    height = 500,
+    height = 400,
     colors = d3.scale.category10();
 
 var svg = d3.select('d3snippet')
@@ -9,10 +9,6 @@ var svg = d3.select('d3snippet')
   .attr('width', width)
   .attr('height', height);
 
-// set up initial nodes and links
-//  - nodes are known by 'id', not by index in array.
-//  - reflexive edges are indicated on the node (as a bold black circle).
-//  - links are always source < target; edge directions are set by 'left' and 'right'.
 var nodes = [
     {id: 0, reflexive: false},
     {id: 1, reflexive: true },
@@ -352,8 +348,6 @@ function keydown() {
 
 function keyup() {
   lastKeyDown = -1;
-
-  // ctrl
   if(d3.event.keyCode === 17) {
     circle
       .on('mousedown.drag', null)
