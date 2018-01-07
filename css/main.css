@@ -204,10 +204,11 @@ h5{
 	#peg-grid-subtitle {
 		top: 245px;
 		left: 10px;
-		width: 343px;
+		width: 363px;
 		height: 147px;
 		line-height: 1.1em;
 		padding-left: 21px;
+		padding-right: 15px;
 
 	}
 }
