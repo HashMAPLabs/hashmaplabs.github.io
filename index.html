@@ -13,6 +13,8 @@ layout: default
 <section class="s-padding">
 	<div class="container">
 		<h2 class="primary-heading">What's #MAP</h2>
+		<img class="dash-line center-block" src="assets/dash.png" width="100">
+
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="box">
@@ -47,12 +49,14 @@ layout: default
 </section>
 <section class="s-padding">
 	<div class="container">
+		<h2 class="primary-heading">Explore map learning!</h2>
+		<img class="dash-line center-block" src="assets/dash.png" width="100">
 		<div class="row">
 			<div class="col-sm-7">
-				<img class="img-fluid img-responsive" src="assets/blocks.png" width="480">
+				<img class="img-fluid center-block" src="assets/blocks.png" width="480">
 			</div>
 			<div class="col-sm-5">
-				<h2 class="primary-heading" style="font-weight: 300">explore map learning!</h2>
+				<h2 class="primary-heading" style="font-weight: 300">here's how we do it!</h2>
 				<table class="table table-bordered table-custom">
 					<tbody>
 						<tr>
@@ -81,86 +85,15 @@ layout: default
 </section>
 <section style="margin: 70px 0px;">
 	<div class="container">
-				<h1 class="text-center" style="font-weight: 300;">Visualization</h1><hr>
-
-		<div class="row" style="margin-bottom: 70px">
-			<div class="col-sm-6">
+		<h2 class="primary-heading">Visualization</h2>
+		<img class="dash-line center-block" src="assets/dash.png" width="100">
+		<div class="row">
+			<div class="col-lg-6">
 				<h1 style="font-size: 48px;text-transform: capitalize;font-weight: 700;line-height: 1.5;margin-top: 90px;">Ever interacted with Learning?<br> Here you can!</h1>
 			</div>
 
-			<div class="col-sm-6">
-				<div style="height: 500px;">
-					<svg xmlns="http://www.w3.org/2000/svg">
-						<defs>
-							<pattern id="grid" patternUnits="userSpaceOnUse"
-							x="50%" y="50%" width="1cm" height="1cm">
-							<line class="grid" x2="100%" />
-							<line class="grid" y2="100%" />
-						</pattern>
-					</defs>
-
-					<rect id="#unit"
-					width="1cm" height="1cm" 
-					fill="transparent"
-					/>
-
-					<rect width="100%" height="100%" fill="url(#grid)" />
-					<line id="x-axis" class="axis"
-					x2="100%" y1="50%" y2="50%"
-					/>
-					<line id="y-axis" class="axis"
-					y2="100%" x1="50%" x2="50%"
-					/>
-
-					<circle id="origin" class="axis point"
-					cx="50%" cy="50%" r="2.5mm"
-					/>
-
-					<svg class="cartesian" x="50%" y="50%">
-						<g transform="scale(1, -1)">
-							<line id="line" class="interactive line"
-							x1="-200%" x2="200%"
-							/>
-
-							<g id="m" class="interactive line">
-								<circle r="3mm" />
-								<line x1="-2mm" x2="2mm" />
-								<line y1="-2mm" y2="2mm" />
-							</g>
-
-							<g id="p1" class="interactive point">
-								<rect class="hit-area"
-								x="-1cm" y="-1cm"
-								width="2cm" height="2cm"
-								/>
-								<circle class="foo" r="2mm" />
-							</g>
-
-							<g id="p2" class="interactive point">
-								<rect class="hit-area"
-								x="-1cm" y="-1cm"
-								width="2cm" height="2cm"
-								/>
-								<circle class="foo" r="2mm" />
-							</g>
-						</g>
-					</svg>
-				</svg>
-
-				<div class="math no-touch">
-					<p class="fn" data-fn="y = kx + m">y = kx + m</p>
-					<div class="coordinates">
-						<p id="p1-data">
-							<span class="x"></span>
-							<span class="y"></span>
-						</p>
-
-						<p id="p2-data">
-							<span class="x"></span>
-							<span class="y"></span>
-						</p>
-					</div>
-				</div>
+			<div class="col-lg-6">
+				<d3snippet></d3snippet>
 			</div>
 		</div>
 	</div>

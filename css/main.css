@@ -114,7 +114,10 @@ a:hover{
 	font-size: 28px;
 	text-align: center !important;
 	font-weight: 700;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+}
+.dash-line{
+	margin-bottom: 15px;
 }
 h5{
 	font-weight: 700;
